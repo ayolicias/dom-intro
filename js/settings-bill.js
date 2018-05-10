@@ -5,8 +5,8 @@ function setLogic() {
 
   var callCost = 2.75;
   var smsCost = 0.75;
-  var warningLevel = 30;
-  var criticalLevel = 50;//for when the add button is pressed
+  var warningLevel = 20;
+  var criticalLevel = 30;//for when the add button is pressed
 
 
   function calculateSettings(settingsItem) {
