@@ -1,4 +1,4 @@
-function setLogic() {
+function SetLogic() {
   var setcall = 0;
   var setsms = 0;//for when the add button is pressed
   var settotal = 0;
@@ -83,4 +83,4 @@ function setLogic() {
   }
 }
 
-var set = setLogic();
+var set = SetLogic();
