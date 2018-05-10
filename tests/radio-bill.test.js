@@ -1,6 +1,6 @@
-describe('radioBill Widget', function(){
+describe('RadioBill Widget', function(){
   it ('should add total for call Bill', function(){
-    var check = radioLogic();
+    var check = RadioLogic();
     check.calc('call');
     check.calc('call');
     check.calc('call');
@@ -9,7 +9,7 @@ describe('radioBill Widget', function(){
   });
 
   it ('should add total for sms Bill', function(){
-    var check = radioLogic();
+    var check = RadioLogic();
     check.calc('sms');
     check.calc('sms');
     check.calc('sms');
@@ -18,7 +18,7 @@ describe('radioBill Widget', function(){
   });
 
   it ('should add total for sms Bill and call Bill', function(){
-    var check = radioLogic();
+    var check = RadioLogic();
     check.calc('sms');
     check.calc('sms');
     check.calc('sms');
