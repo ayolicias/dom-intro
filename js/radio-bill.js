@@ -1,4 +1,4 @@
-function radioLogic() {
+function RadioLogic() {
   var callBill = 0;
   var smsBill = 0;
   var TotalBill = 0;
@@ -35,4 +35,4 @@ function radioLogic() {
   }
 }
 
-var radio = radioLogic();
+var radio = RadioLogic();
