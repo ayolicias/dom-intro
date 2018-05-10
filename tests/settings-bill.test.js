@@ -1,6 +1,6 @@
-describe('settingBill Widget', function(){
+describe('SettingBill Widget', function(){
   it ('should add totalBill for call ', function(){
-    var update = setLogic();
+    var update = SetLogic();
     update.calculateSettings('call');
     update.calculateSettings('call');
     update.calculateSettings('call');
@@ -10,7 +10,7 @@ describe('settingBill Widget', function(){
   assert.equal(update.getsetcall(),13.75);
   });
   it ('should add totalBill for sms ', function(){
-    var update = setLogic();
+    var update = SetLogic();
     update.calculateSettings('sms');
     update.calculateSettings('sms');
     update.calculateSettings('sms');
@@ -20,7 +20,7 @@ describe('settingBill Widget', function(){
   });
 
   it ('should add totalBill for sms and calls ', function(){
-  var update = setLogic();
+  var update = SetLogic();
   update.calculateSettings('call');
   update.calculateSettings('call');
   update.calculateSettings('call');
@@ -36,7 +36,7 @@ describe('settingBill Widget', function(){
 assert.equal(update.getsettotal(),17.50);
 });
 it ('should update callCost, smsCost,criticalLevel and warningLevel ', function(){
-var update = setLogic();
+var update = SetLogic();
 
 update.calculateSettings('call');
 update.calculateSettings('sms');
