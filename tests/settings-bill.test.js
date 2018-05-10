@@ -35,5 +35,18 @@ describe('settingBill Widget', function(){
 
 assert.equal(update.getsettotal(),17.50);
 });
+it ('should update callCost, smsCost,criticalLevel and warningLevel ', function(){
+var update = setLogic();
 
+update.calculateSettings('call');
+update.calculateSettings('sms');
+update.calculateSettings('criticalLevel');
+update.calculateSettings('warningLevel');
+
+assert.equal(update.getWarning(),20);
+assert.equal(update.getCritical(),30);
+assert.equal(update.getsetsms(),0.75);
+assert.equal(update.getsetcall(),2.75);
 });
+});
+
